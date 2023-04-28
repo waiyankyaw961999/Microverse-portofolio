@@ -38,12 +38,12 @@
   align-items: baseline;
 }
 
-.social-link a:not(:last-child) {
+.social-link li:not(:last-child) {
   margin-right: 1.1875rem;
 }
 
 .scroll-down {
-  margin-top: 5rem;
+  margin: 2.5rem 0;
 }
 
 .scroll-down .btn {

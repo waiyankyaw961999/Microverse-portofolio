@@ -9,6 +9,11 @@ a {
   color: var(--text-dark);
 }
 
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
 .h-screen {
   height: 100vh;
 }
