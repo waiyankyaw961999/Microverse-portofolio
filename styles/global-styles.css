@@ -1,6 +1,21 @@
 body {
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--text-dark);
 }
 
 a {
@@ -12,6 +27,7 @@ a {
 ul {
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
 
 .h-screen {
@@ -32,6 +48,10 @@ ul {
 
 .w-full {
   width: 100%;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .flex {
@@ -86,13 +106,16 @@ ul {
   color: var(--text-secondary);
 }
 
+.text-white {
+  color: var(--text-white);
+}
+
 .text-dark {
   color: var(--text-dark);
 }
 
 .text-center {
   text-align: center;
-  width: 100%;
 }
 
 .m-auto {
