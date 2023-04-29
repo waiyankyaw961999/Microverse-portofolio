@@ -2,11 +2,12 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-
 }
 
-
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
@@ -105,7 +106,7 @@ ul {
 }
 
 .text-white {
- color: var(--text-white);
+  color: var(--text-white);
 }
 
 .text-dark {
