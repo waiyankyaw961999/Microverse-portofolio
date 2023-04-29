@@ -11,7 +11,7 @@ h4 {
   margin: 0;
 }
 
-h1 {
+h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -27,6 +27,7 @@ a {
 ul {
   text-decoration: none;
   list-style: none;
+  padding: 0;
 }
 
 .h-screen {

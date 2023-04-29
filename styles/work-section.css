@@ -1,4 +1,4 @@
-.work-section header {
+.work-section .title {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -51,7 +51,7 @@
   line-height: 32px;
 }
 
-.box-content .tags span {
+.box-content .tags li {
   padding: 8px 12px;
   border-radius: 4px;
   background-color: var(--bg-white-1);
