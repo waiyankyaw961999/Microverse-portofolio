@@ -6,6 +6,7 @@
 @import url("work-section.css");
 @import url("about.css");
 @import url("info.css");
+@import url("contact.css");
 
 .hero-bg {
   position: absolute;
