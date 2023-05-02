@@ -55,6 +55,17 @@
   border-radius: 50%;
 }
 
+.btn {
+  transition: ease 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #36b37e;
+  font-size: 1.7em;
+}
+
 @media only screen and (min-width: 768px) {
   .hero-content {
     margin-top: 11.625rem;
