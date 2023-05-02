@@ -60,7 +60,8 @@
 }
 
 .tags li {
-  float:left
+  float:left;
+  width: auto;
 }
 .btn {
   margin-top: 1.8125rem;
