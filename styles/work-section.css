@@ -52,11 +52,16 @@
 }
 
 .box-content .tags li {
+  overflow:auto;
+  width: 20%;
   padding: 8px 12px;
   border-radius: 4px;
   background-color: var(--bg-white-1);
 }
 
+.tags li {
+  float:left
+}
 .btn {
   margin-top: 1.8125rem;
   margin-bottom: 1.5rem;
