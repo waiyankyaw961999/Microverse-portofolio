@@ -61,9 +61,13 @@
 }
 
 .btn:hover {
-  background-color: white;
-  color: #36b37e;
+  background-color: var(--btn-hover);
+  color: var(--text-white);
   font-size: 1.7em;
+}
+
+.btn:active {
+  background-color: var(--bg-primary-dark);
 }
 
 @media only screen and (min-width: 768px) {
