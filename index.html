@@ -76,15 +76,17 @@
         </li>
       </ul>
       <div class="scroll-down">
-        <button type="button" class="scroll-down btn cursor-pointer">
-          <span>
-            <img src="./assets/icons/chevron-down.svg" alt="chevron-down" />
-          </span>
-        </button>
+        <a href="#work-section">
+          <button type="button" class="scroll-down btn cursor-pointer">
+            <span>
+              <img src="./assets/icons/chevron-down.svg" alt="chevron-down" />
+            </span>
+          </button>
+        </a>
       </div>
     </section>
 
-    <section class="work-section">
+    <section class="work-section" id="work-section">
       <div class="title">
         <h2 class="section-header text-center">My Recent Works</h2>
         <span class="underline"></span>
@@ -110,10 +112,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -138,10 +137,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -166,10 +162,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -194,10 +187,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -222,10 +212,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -250,10 +237,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -276,13 +260,9 @@
                 <li>JavaScript</li>
                 <li>HTML</li>
               </ul>
-           
             </div>
             <div class="flex justify-center">
-              <button
-                class="text-center btn text-white"
-                type="button"
-              >
+              <button class="text-center btn text-white" type="button">
                 See Project
               </button>
             </div>
@@ -352,5 +332,82 @@
         </div>
       </div>
     </section>
+
+    <section class="contact-section relative">
+      <div class="contact-header">
+        <h2 class="text-center">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
+      </div>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xgebdabq" method="POST" class="flex flex-col">
+          <input
+            maxlength="30"
+            class="contact-input text-dark"
+            name="name"
+            type="text"
+            placeholder="Full name"
+            required
+          />
+
+          <input
+            class="contact-input text-dark"
+            name="email"
+            type="email"
+            placeholder="Email address"
+            required
+          />
+
+          <textarea
+            maxlength="500"
+            type="text-area"
+            class="contact-input message-box"
+            required
+            name="message"
+            placeholder="Hey I'd like to connect to..."
+          ></textarea>
+
+          <button type="submit" class="bg-primary text-center">
+            <span class="text-white">Get in touch</span>
+          </button>
+        </form>
+
+        <h4 class="text-center text-dark">wykdev@gmail.com</h4>
+      </div>
+      <div class="contact-bg"></div>
+    </section>
+    <footer>
+      <ul class="social-link flex justify-center">
+        <li>
+          <a href="#twitter" target="_blank" rel="noopener noreferrer"
+            ><span>
+              <img src="./assets/icons/twitter.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#linkedin" target="_blank" rel="noopener noreferrer"
+            ><span>
+              <img src="./assets/icons/linkedin.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#medium" target="_blank" rel="noopener noreferrer"
+            ><span> <img src="./assets/icons/medium.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#github" target="_blank" rel="noopener noreferrer"
+            ><span> <img src="./assets/icons/github.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#angellist" target="_blank" rel="noopener noreferrer">
+            <span></span>
+            <img src="./assets/icons/angellist.svg" alt="angelist" />
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
