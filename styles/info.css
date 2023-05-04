@@ -127,3 +127,21 @@
   font-size: 12px;
   text-align: center;
 }
+
+@media only screen and (min-width: 1090px) {
+  .info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    column-gap: 1.5rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1090px) and (min-width: 768px) {
+  .info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    row-gap: 32px;
+  }
+}
