@@ -76,7 +76,6 @@ textarea[type=text-area]:focus {
 
 .contact-form button:active {
   background-color: var(--bg-primary-dark);
-
 }
 
 .contact-section h4 {
