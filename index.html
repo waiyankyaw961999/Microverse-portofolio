@@ -243,31 +243,6 @@
             </div>
           </div>
         </div>
-        <div class="box flex flex-col">
-          <div class="box-img">
-            <img
-              class="w-full h-full"
-              src="./assets/images/img-placeholder.png"
-              alt="imgPlaceholder"
-            />
-          </div>
-          <div class="box-content fw-600">
-            <h2 class="">Multi-Post Stories Gain + Glory</h2>
-            <div class="tags">
-              <ul class="flex w-full justify-between">
-                <li>Ruby on Rails</li>
-                <li>Css</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-            </div>
-            <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
-                See Project
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -291,10 +266,10 @@
 
     <section class="info-section">
       <div class="info-box language">
-        <div class="info-content text-dark">
+        <div class="language-content info-content text-dark">
           <h2 class="text-center">Languages</h2>
           <ul class="language-list w-full">
-            <li>Ruby on rails</li>
+            <li>Ruby</li>
             <li>Css</li>
             <li>Javascript</li>
             <li>Html</li>
@@ -307,7 +282,7 @@
           <h2 class="text-center">Frameworks</h2>
           <ul class="framework-list framework-list-1 w-full">
             <li>React.js</li>
-            <li>Ruby on Rails</li>
+            <li>Ruby</li>
             <li>RSpec</li>
           </ul>
           <ul class="framework-list framework-list-2 w-full">
@@ -334,51 +309,59 @@
     </section>
 
     <section class="contact-section relative">
-      <div class="contact-header">
-        <h2 class="">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h2>
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2 class="">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </div>
+        <div class="contact-form">
+          <form
+            action="https://formspree.io/f/xgebdabq"
+            method="POST"
+            class="flex flex-col"
+          >
+            <input
+              maxlength="30"
+              class="contact-input text-dark"
+              name="name"
+              type="text"
+              placeholder="Full name"
+              required
+            />
+
+            <input
+              class="contact-input text-dark"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+            />
+
+            <textarea
+              maxlength="500"
+              type="text-area"
+              class="contact-input message-box"
+              required
+              name="message"
+              placeholder="Hey I'd like to connect to..."
+            ></textarea>
+
+            <div class="btn-wrapper">
+              <button type="submit" class="bg-primary text-center">
+                <span class="text-white">Get in touch</span>
+              </button>
+            </div>
+          </form>
+
+          <h4 class="text-center text-dark">wykdev@gmail.com</h4>
+        </div>
       </div>
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xgebdabq" method="POST" class="flex flex-col">
-          <input
-            maxlength="30"
-            class="contact-input text-dark"
-            name="name"
-            type="text"
-            placeholder="Full name"
-            required
-          />
+      <div class="bg-frames absolute"></div>
 
-          <input
-            class="contact-input text-dark"
-            name="email"
-            type="email"
-            placeholder="Email address"
-            required
-          />
-
-          <textarea
-            maxlength="500"
-            type="text-area"
-            class="contact-input message-box"
-            required
-            name="message"
-            placeholder="Hey I'd like to connect to..."
-          ></textarea>
-
-          <button type="submit" class="bg-primary text-center">
-            <span class="text-white">Get in touch</span>
-          </button>
-        </form>
-
-        <h4 class="text-center text-dark">wykdev@gmail.com</h4>
-      </div>
-      <div class="contact-bg"></div>
     </section>
-
-    <footer>
+    <footer class="">
       <ul class="social-link flex justify-center">
         <li>
           <a href="#twitter" target="_blank" rel="noopener noreferrer"
