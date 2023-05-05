@@ -1,10 +1,10 @@
 .contact-section {
-  display: grid;
   margin: 0 auto;
   margin-top: 3.375rem;
-  grid-template-columns: auto;
-  align-items: center;
-  justify-content: center;
+}
+
+.contact-container {
+  max-width: 73.18175rem;
 }
 
 form {
@@ -12,8 +12,10 @@ form {
 }
 
 .contact-header {
-  padding: 0 1.875rem;
+  display: flex;
+  justify-content: center;
   height: auto;
+  padding: 0 24px;
 }
 
 .contact-header h2 {
@@ -21,6 +23,7 @@ form {
 }
 
 .contact-form {
+  position: relative;
   margin-top: 3.625rem;
   padding: 0 1.875rem;
 }
@@ -92,21 +95,22 @@ textarea[type=text-area]:focus {
   font-weight: 400;
 }
 
-.contact-bg {
+.bg-frames {
   background-image: url("/assets/images/contact-form.svg");
   position: absolute;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 92% 100%;
   width: 92px;
   height: 100%;
   right: 0;
   bottom: 0;
 }
 
-@media only screen and (min-width: 1090px) {
+@media only screen and (min-width: 1080px) {
   form {
-    align-items: flex-start;
+    max-width: 86%;
     height: 20.625rem;
+    align-items: normal;
   }
 
   input {
@@ -114,16 +118,22 @@ textarea[type=text-area]:focus {
   }
 
   .contact-section {
-    display: grid;
+    display: flex;
+    margin-top: 6.062rem;
+    justify-content: center;
+  }
+
+  .contact-container {
+    display: flex;
     height: 30.625rem;
-    margin-top: 1.09375rem;
-    grid-template-columns: repeat(6, 1fr);
-    justify-items: center;
+    justify-content: space-between;
+    width: 88%;
   }
 
   .contact-header {
-    height: 16rem;
-    grid-column: 2/4;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-header h2 {
@@ -138,21 +148,28 @@ textarea[type=text-area]:focus {
   }
 
   .contact-form {
-    width: 80%;
     margin: 0;
-    grid-column: span 2/6;
+    height: 100%;
+    width: 86%;
+    padding: 0;
   }
 
-  .contact-bg {
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .bg-frames {
     position: absolute;
     background-image:
       url("/assets/images/contact-form-frame.svg"),
       url("/assets/images/contact-form-desktop-1.svg"),
       url("/assets/images/contact-form-desktop-2.svg");
     background-position:
-      100% 132%,
-      0% 165%,
-      32% 100%;
+      103% 100%,
+      0% 100%,
+      30% 90%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -160,8 +177,9 @@ textarea[type=text-area]:focus {
   }
 }
 
-@media only screen and (max-width = 1164px) {
-  .contact-header {
-    grid-column: 1/4;
+@media only screen and (min-width: 1374px) {
+  .contact-container {
+    display: flex;
+    height: 30.625rem;
   }
 }

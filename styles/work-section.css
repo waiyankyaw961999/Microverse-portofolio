@@ -32,6 +32,7 @@
   display: grid;
   gap: 24px;
   column-gap: 24px;
+  justify-content: center;
 }
 
 .box-content {
@@ -70,7 +71,7 @@
 
 @media only screen and (min-width: 1090px) {
   .work-lists {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0fr);
     margin: 0 8.9735rem;
     row-gap: 32px;
   }
