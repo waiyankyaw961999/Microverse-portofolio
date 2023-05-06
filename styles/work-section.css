@@ -21,6 +21,11 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin: 24px auto;
+  transition: ease 1s;
+}
+
+.box:hover {
+  scale: 1.1;
 }
 
 .box-img {
