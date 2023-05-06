@@ -26,6 +26,13 @@
 .box-img {
   height: 340px;
   background: var(--bg-white);
+  cursor: pointer;
+}
+
+.box-img:hover {
+  scale: 1.02;
+  border: 1px solid var(--bg-primary);
+  transition: ease-out 0.3s;
 }
 
 .work-lists {
