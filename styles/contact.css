@@ -1,8 +1,10 @@
 .contact-section {
-  display: grid;
+  margin: 0 auto;
   margin-top: 3.375rem;
-  grid-template-columns: auto;
-  align-items: center;
+}
+
+.contact-container {
+  max-width: 73.18175rem;
 }
 
 form {
@@ -10,10 +12,18 @@ form {
 }
 
 .contact-header {
-  padding: 0 1.875rem;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  padding: 0 24px;
+}
+
+.contact-header h2 {
+  text-align: center;
 }
 
 .contact-form {
+  position: relative;
   margin-top: 3.625rem;
   padding: 0 1.875rem;
 }
@@ -85,29 +95,91 @@ textarea[type=text-area]:focus {
   font-weight: 400;
 }
 
-.contact-bg {
+.bg-frames {
   background-image: url("/assets/images/contact-form.svg");
   position: absolute;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 92% 100%;
   width: 92px;
   height: 100%;
   right: 0;
   bottom: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   form {
-    align-items: flex-start;
+    max-width: 86%;
+    height: 20.625rem;
+    align-items: normal;
+  }
+
+  input {
+    height: 1.5rem;
   }
 
   .contact-section {
-    display: grid;
-    margin-top: 3.375rem;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    margin-top: 6.062rem;
+    justify-content: center;
+  }
+
+  .contact-container {
+    display: flex;
+    height: 30.625rem;
+    justify-content: space-between;
+    width: 88%;
+  }
+
+  .contact-header {
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-header h2 {
+    width: 30rem;
+    font-size: 30px;
+    line-height: 52px;
+    height: auto;
   }
 
   .contact-section h4 {
     visibility: hidden;
+  }
+
+  .contact-form {
+    margin: 0;
+    height: 100%;
+    width: 86%;
+    padding: 0;
+  }
+
+  .btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .bg-frames {
+    position: absolute;
+    background-image:
+      url("/assets/images/contact-form-frame.svg"),
+      url("/assets/images/contact-form-desktop-1.svg"),
+      url("/assets/images/contact-form-desktop-2.svg");
+    background-position:
+      103% 100%,
+      0% 100%,
+      30% 90%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 1374px) {
+  .contact-container {
+    display: flex;
+    height: 30.625rem;
   }
 }

@@ -21,7 +21,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-bottom: 10px;
+  align-items: center;
+}
+
+.language-content {
+  position: relative;
+  bottom: 19%;
+  align-items: center;
 }
 
 .info-content h2 {
@@ -32,7 +38,7 @@
 
 .language-list {
   display: grid;
-  width: auto;
+  width: 80%;
   color: var(--text-primary);
   font-weight: 600;
   grid-template-columns: auto auto auto auto;
@@ -57,10 +63,14 @@
   height: 350px;
 }
 
+.framework-list-1,
+.framework-list-2 {
+  width: 80%;
+}
+
 .framework-list-1 {
   display: grid;
   padding: 0;
-  width: auto;
   color: var(--text-primary);
   font-weight: 600;
   grid-template-columns: auto auto auto;
@@ -70,7 +80,6 @@
 
 .framework-list-2 {
   display: grid;
-  width: auto;
   justify-content: center;
   color: var(--text-primary);
   font-weight: 600;
@@ -104,7 +113,7 @@
   width: auto;
   color: var(--text-primary);
   font-weight: 600;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, auto);
   grid-gap: 5px;
   margin: 10px 5px 8px;
 }
@@ -122,8 +131,26 @@
 
 .skill-list li {
   background-color: var(--bg-white);
-  padding: 15px 5px;
+  padding: 15px 12px;
   border-radius: 5px;
   font-size: 12px;
   text-align: center;
+}
+
+@media only screen and (min-width: 1090px) {
+  .info-section {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    column-gap: 1.5rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1090px) and (min-width: 768px) {
+  .info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    row-gap: 32px;
+  }
 }

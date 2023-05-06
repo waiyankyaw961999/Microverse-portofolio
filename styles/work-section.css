@@ -31,6 +31,8 @@
 .work-lists {
   display: grid;
   gap: 24px;
+  column-gap: 24px;
+  justify-content: center;
 }
 
 .box-content {
@@ -65,4 +67,20 @@
   font-size: 17px;
   border-radius: 4px;
   border: 0;
+}
+
+@media only screen and (min-width: 1090px) {
+  .work-lists {
+    grid-template-columns: repeat(3, 0fr);
+    margin: 0 8.9735rem;
+    row-gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 1090px) and (min-width: 768px) {
+  .work-lists {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    row-gap: 32px;
+  }
 }

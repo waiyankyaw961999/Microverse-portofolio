@@ -7,27 +7,37 @@
 @import url("about.css");
 @import url("info.css");
 @import url("contact.css");
+@import url("footer.css");
 
 .hero-bg {
   position: absolute;
   background-image: url('../assets/images/header-bg-mobile.svg');
-  background-position: center;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
+  background-position: top right;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-bg {
-    position: absolute;
     background-image: url('../assets/images/header-bg-desktop.png');
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 65rem;
+    top: -60px;
+    z-index: 10;
+  }
+}
+
+@media only screen and (min-width: 430px) {
+  .hero-bg {
+    background-image: url('../assets/images/header-bg-desktop.png');
+    background-position: center;
     background-size: cover;
     width: 100%;
-    min-height: 74rem;
-    top: 0;
+    height: 100%;
+    z-index: -1;
   }
 }
