@@ -88,7 +88,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://waiyankyaw961999.github.io/Microverse-portofolio/)
+- [Live Demo Link](https://waiyankyaw961999.github.io/Microverse-portofolio/#hero-section/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
