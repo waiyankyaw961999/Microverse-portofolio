@@ -82,4 +82,18 @@
   .nav-container {
     visibility: hidden;
   }
+
+  .nav-items-mobile {
+    display: none;
+  }
+}
+
+.nav-items-mobile {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 8rem;
 }
