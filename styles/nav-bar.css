@@ -49,15 +49,15 @@
   transition: transform 0.4s ease-in-out;
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-button span:nth-of-type(1) {
+.nav-container .checked-1 {
   transform: rotate(45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-button span:nth-of-type(2) {
+.nav-container .checked-2 {
   transform: scaleY(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-button span:nth-last-of-type(1) {
+.nav-container .checked-3 {
   transform: rotate(-45deg);
 }
 
@@ -73,9 +73,10 @@
 
 .nav-toggle-show {
   visibility: visible;
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   top: 0;
   background: #fff;
   right: 0;
@@ -83,6 +84,13 @@
   height: 100vh;
   z-index: 1;
   transition: all 0.5s ease-in-out;
+}
+
+.nav-item-show{
+  visibility: visible;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 @media only screen and (min-width: 768px) {

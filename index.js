@@ -1,17 +1,29 @@
 /* eslint-disable linebreak-style */
 
 function navItemsToggle() {
-//   navItems.classlist.toggle('nav-toggle-show');
-  const navItems = document.querySelectorAll('.nav-items');
-  navItems.forEach((nav) => {
-    nav.classList.toggle('nav-toggle-show');
-    // TODO: toggle the nav-items children to set fixed height and no left-right margin
-    // TODO: loop through each child from the nav-items and toggle the class
-    nav.children[0].classList.toggle('nav-toggle-show');
-    nav.children[1].classList.toggle('nav-toggle-show');
-    nav.children[2].classList.toggle('nav-toggle-show');
-
-    // TODO: when we click on the link in the nav-items, we want to hide the nav-items
+  const humBurger = document.getElementsByClassName('menu-button');
+  const navItems = document.getElementsByClassName('nav-items');
+  navItems[0].classList.toggle('nav-toggle-show');
+  Object.entries(navItems[0].children).forEach((item) => {
+    item[1].classList.toggle('nav-item-show');
+    item[1].addEventListener('click', () => {
+      navItems[0].classList.remove('nav-toggle-show');
+      Object.entries(navItems[0].children).forEach((item, index) => {
+        item[1].classList.remove('nav-item-show');
+        if (index < 3) {
+          humBurger[0].children[index].classList.remove(`checked-${index + 1}`);
+        }
+      });
+    });
   });
 }
+
+function humburgerToggle() {
+  const humBurger = document.getElementsByClassName('menu-button');
+  Object.entries(humBurger[0].children).forEach((item, index) => {
+    item[1].classList.toggle(`checked-${index + 1}`);
+  });
+}
+
 document.querySelector('.nav-container .checkbox').addEventListener('click', navItemsToggle);
+document.querySelector('.nav-container .checkbox').addEventListener('click', humburgerToggle);
