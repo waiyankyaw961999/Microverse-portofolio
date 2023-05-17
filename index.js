@@ -4,6 +4,8 @@ function navItemsToggle() {
   const humBurger = document.getElementsByClassName('menu-button');
   const navItems = document.getElementsByClassName('nav-items');
   navItems[0].classList.toggle('nav-toggle-show');
+  navItems[0].classList.remove('text-center');
+  navItems[0].classList.remove('align-items-center');
   Object.entries(navItems[0].children).forEach((item) => {
     item[1].classList.toggle('nav-item-show');
     item[1].addEventListener('click', () => {
