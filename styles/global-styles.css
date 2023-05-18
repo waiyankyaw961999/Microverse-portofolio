@@ -1,12 +1,11 @@
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
-
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -161,6 +160,7 @@ ul {
 .bg-dark {
   background-color: var(--bg-dark);
 }
+
 .bg-white {
   background-color: var(--bg-white);
 }

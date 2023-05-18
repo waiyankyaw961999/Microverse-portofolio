@@ -77,13 +77,12 @@
   max-height: 100%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  transition: all 0.2s ease-in-out;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 1rem 1rem;
   visibility: hidden;
 }
 
-.details-modal-title {
+.project-title {
   font-size: 32px;
   line-height: 44px;
   font-weight: 600;
