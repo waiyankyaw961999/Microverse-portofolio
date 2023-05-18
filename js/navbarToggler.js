@@ -1,4 +1,5 @@
-function navItemsToggle() {
+/* eslint-disable linebreak-style */
+export function navItemsToggle() {
   const humBurger = document.getElementsByClassName('menu-button');
   const navItems = document.getElementsByClassName('nav-items');
   navItems[0].classList.toggle('nav-toggle-show');
@@ -18,12 +19,9 @@ function navItemsToggle() {
   });
 }
 
-function humburgerToggle() {
+export function humburgerToggle() {
   const humBurger = document.getElementsByClassName('menu-button');
   Object.entries(humBurger[0].children).forEach((item, index) => {
     item[1].classList.toggle(`checked-${index + 1}`);
   });
 }
-
-document.querySelector('.nav-container .checkbox').addEventListener('click', navItemsToggle);
-document.querySelector('.nav-container .checkbox').addEventListener('click', humburgerToggle);
