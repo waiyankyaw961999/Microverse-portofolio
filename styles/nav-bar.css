@@ -5,9 +5,11 @@
 .nav-container {
   position: absolute;
   width: 32px;
-  height: 32px;
   right: 0;
   z-index: 20;
+  font-size: 30px;
+  color: #67798e;
+  font-weight: 400;
 }
 
 .nav-container .checkbox {
@@ -68,7 +70,7 @@
 .nav-items {
   visibility: hidden;
   line-height: 1.25rem;
-  font-size: 0.9375rem;
+  font-size: 32px;
 }
 
 .nav-items a:not(:last-child) {
@@ -88,7 +90,7 @@
   z-index: 1;
   transition: all 0.5s ease-in-out;
   justify-content: flex-start;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-top: 2rem;
 }
 
@@ -117,4 +119,8 @@ a .nav-toggle-show {
   font-size: 30px;
   color: #3a4a42;
   font-weight: 600;
+}
+
+.hidden {
+  display: none;
 }

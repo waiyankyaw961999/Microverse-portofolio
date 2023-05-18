@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Microverse Portfolio</title>
   </head>
+
   <body>
-    <header id="header" class="nav-section relative bg-white">
+    <header id="header" class="nav-section relative">
       <nav class="w-full">
         <div class="flex align-items-center h-4">
           <div class="nav-items text-center w-full">
@@ -18,11 +23,12 @@
           </div>
           <div class="nav-container">
             <input class="checkbox" type="checkbox" />
-            <div class="menu-button">
-              <span class=""></span>
-              <span class=""></span>
-              <span class=""></span>
-            </div>
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="hidden">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
           </div>
         </div>
       </nav>
@@ -30,10 +36,9 @@
 
     <section
       id="hero-section"
-      class="hero-section relative flex flex-col align-items-center bg-white"
+      class="hero-section relative flex flex-col align-items-center"
     >
       <div class="hero-bg absolute"></div>
-
       <div class="hero-container">
         <div class="hero-content fw-700 leading-4 w-full text-center">
           <h1 class="text-dark hero-title">
@@ -120,13 +125,15 @@
             </div>
           </div>
         </div>
-        <div class="box flex flex-col">
-          <div class="box-img">
-            <img
-              class="w-full h-full"
-              src="./assets/images/img-placeholder.png"
-              alt="imgPlaceholder"
-            />
+        <div class="box-content fw-600">
+          <h2 class="">Multi-Post Stories Gain + Glory</h2>
+          <div class="tags">
+            <ul class="flex w-full justify-between">
+              <li>Ruby on Rails</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
           </div>
           <div class="box-content fw-600">
             <h2 class="">Multi-Post Stories Gain + Glory</h2>
@@ -327,34 +334,54 @@
           </ul>
         </div>
       </div>
-
-      <div class="info-box framework">
-        <div class="info-content text-dark">
-          <h2 class="text-center">Frameworks</h2>
-          <ul class="framework-list framework-list-1 w-full">
-            <li>React.js</li>
-            <li>Ruby</li>
-            <li>RSpec</li>
-          </ul>
-          <ul class="framework-list framework-list-2 w-full">
-            <li>Capybara</li>
-            <li>Selenium</li>
-          </ul>
+      <div class="box flex flex-col">
+        <div class="box-img">
+          <img
+            class="w-full h-full"
+            src="./assets/images/img-placeholder.png"
+            alt="imgPlaceholder"
+          />
+        </div>
+        <div class="box-content fw-600">
+          <h2 class="">Multi-Post Stories Gain + Glory</h2>
+          <div class="tags">
+            <ul class="flex w-full justify-between">
+              <li>Ruby on Rails</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <button class="text-center btn text-white" type="button">
+              See Project
+            </button>
+          </div>
         </div>
       </div>
-
-      <div class="info-box skill">
-        <div class="info-content text-dark">
-          <h2 class="text-center">Skills</h2>
-          <ul class="skill-list skill-list-1 w-full">
-            <li>Database Management</li>
-            <li>Version Control</li>
-          </ul>
-          <ul class="skill-list skill-list-2 w-full">
-            <li>CLI</li>
-            <li>Web Development</li>
-            <li>API Design</li>
-          </ul>
+      <div class="box flex flex-col">
+        <div class="box-img">
+          <img
+            class="w-full h-full"
+            src="./assets/images/img-placeholder.png"
+            alt="imgPlaceholder"
+          />
+        </div>
+        <div class="box-content fw-600">
+          <h2 class="">Multi-Post Stories Gain + Glory</h2>
+          <div class="tags flex w-full justify-between">
+            <ul class="flex w-full justify-between">
+              <li>Ruby on Rails</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <button class="text-center btn text-white" type="button">
+              See Project
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -367,46 +394,21 @@
             like to chat please get in touch.
           </h2>
         </div>
-        <div class="contact-form">
-          <form
-            action="https://formspree.io/f/xgebdabq"
-            method="POST"
-            class="flex flex-col"
-          >
-            <input
-              maxlength="30"
-              class="contact-input text-dark"
-              name="name"
-              type="text"
-              placeholder="Full name"
-              required
-            />
-
-            <input
-              class="contact-input text-dark"
-              name="email"
-              type="email"
-              placeholder="Email address"
-              required
-            />
-
-            <textarea
-              maxlength="500"
-              type="text-area"
-              class="contact-input message-box"
-              required
-              name="message"
-              placeholder="Hey I'd like to connect to..."
-            ></textarea>
-
-            <div class="btn-wrapper">
-              <button type="submit" class="bg-primary text-center">
-                <span class="text-white">Get in touch</span>
-              </button>
-            </div>
-          </form>
-
-          <h4 class="text-center text-dark">wykdev@gmail.com</h4>
+        <div class="box-content fw-600">
+          <h2 class="">Multi-Post Stories Gain + Glory</h2>
+          <div class="tags">
+            <ul class="flex w-full justify-between">
+              <li>Ruby on Rails</li>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <button class="text-center btn text-white" type="button">
+              See Project
+            </button>
+          </div>
         </div>
       </div>
       <div class="bg-frames absolute"></div>
