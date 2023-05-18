@@ -8,7 +8,7 @@
     <title>Microverse Portfolio</title>
   </head>
   <body>
-    <header id="header" class="nav-section relative">
+    <header id="header" class="nav-section relative bg-white">
       <nav class="w-full">
         <div class="flex align-items-center h-4">
           <div class="nav-items text-center w-full">
@@ -28,7 +28,10 @@
       </nav>
     </header>
 
-    <section id="hero-section" class="hero-section relative flex flex-col align-items-center">
+    <section
+      id="hero-section"
+      class="hero-section relative flex flex-col align-items-center bg-white"
+    >
       <div class="hero-bg absolute"></div>
 
       <div class="hero-container">
@@ -86,12 +89,11 @@
       </div>
     </section>
 
-    <section id="work-section" class="work-section" id="work-section">
+    <section id="work-section" class="work-section bg-white" id="work-section">
       <div class="title">
         <h2 class="section-header text-center">My Recent Works</h2>
         <span class="underline"></span>
       </div>
-
       <div class="work-lists">
         <div class="box flex flex-col">
           <div class="box-img">
@@ -112,7 +114,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
+              <button class="text-center btn text-white btn-view" type="button">
                 See Project
               </button>
             </div>
@@ -137,7 +139,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
+              <button class="text-center btn text-white btn-view" type="button">
                 See Project
               </button>
             </div>
@@ -162,7 +164,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
+              <button class="text-center btn text-white btn-view" type="button">
                 See Project
               </button>
             </div>
@@ -187,7 +189,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
+              <button class="text-center btn text-white btn-view" type="button">
                 See Project
               </button>
             </div>
@@ -212,7 +214,7 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
+              <button class="text-center btn text-white btn-view" type="button">
                 See Project
               </button>
             </div>
@@ -237,16 +239,65 @@
               </ul>
             </div>
             <div class="flex justify-center">
-              <button class="text-center btn text-white" type="button">
+              <button class="text-center btn text-white btn-view" type="button">
                 See Project
               </button>
             </div>
           </div>
         </div>
       </div>
+      <div class="details-modal-overlay"></div>
+      <div class="details-modal">
+        <div class="flex flex-col relative">
+          <div>
+            <img
+              class="detail-img"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+            <svg
+              class="absolute btn-close"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <h3 class="project-title"></h3>
+          <div class="details-tags">
+            <ul class="flex"></ul>
+          </div>
+          <div class="details-body"></div>
+        </div>
+        <div class="flex justify-between">
+          <button class="detail-btn">
+            <a href="#liveurl" class="flex align-items-center justify-between">
+              <span class="text-white tag-name">See live</span>
+              <img src="./assets/icons/icon-live.svg" alt="live-icon" />
+            </a>
+          </button>
+          <button class="detail-btn">
+            <a href="#github" class="flex align-items-center justify-between">
+              <span class="text-white tag-name">See Source</span>
+              <img src="./assets/icons/icon-github.svg" alt="live-icon" />
+            </a>
+          </button>
+        </div>
+      </div>
     </section>
 
-    <section id="about-section" class="about-section relative flex flex-col align-items-center">
+    <section
+      id="about-section"
+      class="about-section relative flex flex-col align-items-center bg-white"
+    >
       <div class="about-bg"></div>
       <div class="about-container">
         <div class="about-content fw-700 leading-4 w-full text-center mb-2">
@@ -264,7 +315,7 @@
       </div>
     </section>
 
-    <section id="info-section" class="info-section">
+    <section id="info-section" class="info-section bg-white">
       <div class="info-box language">
         <div class="language-content info-content text-dark">
           <h2 class="text-center">Languages</h2>
@@ -308,7 +359,7 @@
       </div>
     </section>
 
-    <section id="contact-section" class="contact-section relative">
+    <section id="contact-section" class="contact-section relative bg-white">
       <div class="contact-container">
         <div class="contact-header">
           <h2 class="">
@@ -359,9 +410,8 @@
         </div>
       </div>
       <div class="bg-frames absolute"></div>
-
     </section>
-    <footer id="footer" class="">
+    <footer id="footer" class="bg-white">
       <ul class="social-link flex justify-center">
         <li>
           <a href="#twitter" target="_blank" rel="noopener noreferrer"
@@ -394,6 +444,6 @@
       </ul>
     </footer>
 
-    <script src="/index.js"> </script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>
