@@ -1,9 +1,13 @@
+.nav-section {
+  z-index: 10;
+}
+
 .nav-container {
   position: absolute;
   width: 32px;
   height: 32px;
   right: 0;
-  z-index: 100;
+  z-index: 20;
 }
 
 .nav-container .checkbox {
@@ -11,15 +15,15 @@
   display: block;
   height: 32px;
   width: 32px;
-  z-index: 100;
+  z-index: 10;
   opacity: 0;
   cursor: pointer;
 }
 
 .nav-container .menu-button {
   display: flex;
-  height: 26px;
-  width: 32px;
+  height: 14px;
+  width: 20px;
   top: 17px;
   left: 20px;
   z-index: 10;
@@ -29,7 +33,7 @@
 
 .nav-container .menu-button span {
   display: block;
-  height: 4px;
+  height: 2px;
   width: 100%;
   border-radius: 10px;
   background: #0e2451;
@@ -83,13 +87,9 @@
   height: 100vh;
   z-index: 1;
   transition: all 0.5s ease-in-out;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   justify-content: flex-start;
   padding-left: 1rem;
   padding-top: 2rem;
-  gap: 20px;
 }
 
 .nav-item-show {
