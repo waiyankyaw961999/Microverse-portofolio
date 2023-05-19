@@ -1,7 +1,6 @@
 .work-section {
   position: relative;
   padding: 1.875rem 0;
-
 }
 
 .work-section .title {
@@ -90,7 +89,7 @@
   font-weight: 600;
 }
 
-.details-tags>ul li {
+.details-tags > ul li {
   background: #ebf0ee;
   padding: 8px 12px;
   margin-left: 0.34rem;

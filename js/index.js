@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 import { navItemsToggle, humburgerToggle } from './navbarToggler.js';
 import data from '../data/projects.js';
 
