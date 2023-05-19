@@ -1,12 +1,19 @@
-/* eslint-disable no-useless-escape */
 /* eslint-disable linebreak-style */
+/* eslint-disable no-useless-escape */
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const name = document.getElementById('name');
 const message = document.getElementById('message');
 const formError = document.querySelector('.form-error');
 
-
+window.onload = () => {
+  const formData = window.localStorage.getItem('contact');
+  if (formData) {
+    const { name: localName, email: localEmail } = JSON.parse(formData);
+    name.value = localName;
+    email.value = localEmail;
+  }
+};
 function showError() {
   if (email.validity.valueMissing) {
     formError.innerHTML = 'You need to enter an e-mail address.';
@@ -37,4 +44,6 @@ form.addEventListener('submit', (event) => {
     showError();
     event.preventDefault();
   }
+  const formData = { name: name.value, email: email.value };
+  window.localStorage.setItem('contact', JSON.stringify(formData));
 });
