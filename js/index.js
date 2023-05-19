@@ -43,6 +43,9 @@ viewDetailButton.forEach((button, index) => {
     });
     const desc = detailsModal.querySelector('.details-body');
 
+    const detailImg = detailsModal.querySelector('.detail-img');
+    detailImg.setAttribute('src', projectData.thumbnail);
+
     projectData.desc.forEach((item) => {
       desc.appendChild(document.createElement('p')).innerHTML = item;
     });

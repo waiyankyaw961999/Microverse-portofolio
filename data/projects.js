@@ -3,7 +3,7 @@ const projects = [
   {
     id: 1,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
@@ -18,7 +18,7 @@ const projects = [
   {
     id: 2,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
@@ -33,7 +33,7 @@ const projects = [
   {
     id: 3,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
@@ -48,7 +48,7 @@ const projects = [
   {
     id: 3,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
@@ -63,7 +63,7 @@ const projects = [
   {
     id: 4,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
@@ -78,7 +78,7 @@ const projects = [
   {
     id: 5,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
@@ -93,7 +93,7 @@ const projects = [
   {
     id: 6,
     title: 'Keeping track of hundreds of components',
-    thumbnail: 'https://miro.medium.com/v2/resize:fit:2000/format:webp/1*WPMRCdxJhe4cvefeJ5FbmQ.jpeg',
+    thumbnail: 'https://i.ibb.co/SRLH0cX/svgviewer-png-output.png',
     tags: [
       'Ruby',
       'javascript',
