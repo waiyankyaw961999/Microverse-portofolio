@@ -79,7 +79,7 @@
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 1rem 1rem;
   visibility: hidden;
-  max-width: 920px;
+  width: 96%;
   height: 96vh;
 }
 
@@ -89,6 +89,12 @@
   line-height: 44px;
   font-weight: 600;
   width: 94%;
+}
+
+.details-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .details-tags > ul li {
@@ -208,6 +214,7 @@
 
   .details-modal {
     padding: 5rem 1rem  1rem;
+    max-width: 920px;
   }
 
   .btn-wrapper-mobile {
