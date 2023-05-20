@@ -1,17 +1,16 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
-const name = document.getElementById('name');
+const nameInput = document.getElementById('name');
 const message = document.getElementById('message');
 const formError = document.querySelector('.form-error');
 
-window.onload = () => {
-  const formData = window.localStorage.getItem('contact');
-  if (formData) {
-    const { name: localName, email: localEmail } = JSON.parse(formData);
-    name.value = localName;
-    email.value = localEmail;
-  }
-};
+let formData = window.localStorage.getItem('contact');
+if (formData) {
+  formData = JSON.parse(formData);
+  nameInput.value = formData.name;
+  email.value = formData.email;
+}
+
 function showError() {
   if (email.validity.valueMissing) {
     formError.innerHTML = 'You need to enter an e-mail address.';
@@ -23,17 +22,32 @@ function showError() {
   formError.className = 'form-error';
 }
 
+function saveFormData() {
+  const data = { name: nameInput.value, email: email.value, message: message.value };
+  window.localStorage.setItem('contact', JSON.stringify(data));
+}
+
 email.addEventListener('input', () => {
   if (email.validity.valid) {
     formError.innerHTML = '';
     formError.className = '';
+    saveFormData();
   } else {
     showError();
   }
 });
 
+nameInput.addEventListener('input', () => {
+  saveFormData();
+});
+
+message.addEventListener('input', () => {
+  saveFormData();
+});
+
 form.addEventListener('submit', (event) => {
-  if (name.validity.valueMissing || message.validity.valueMissing || email.validity.valueMissing) {
+  if (nameInput.validity.valueMissing || message.validity.valueMissing
+    || email.validity.valueMissing) {
     formError.innerHTML = 'You need to fill all the fields.';
     formError.className = 'form-error';
     event.preventDefault();
@@ -42,6 +56,4 @@ form.addEventListener('submit', (event) => {
     showError();
     event.preventDefault();
   }
-  const formData = { name: name.value, email: email.value };
-  window.localStorage.setItem('contact', JSON.stringify(formData));
 });
