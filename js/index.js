@@ -31,6 +31,7 @@ closeButton.forEach((button) => {
     }
     const detailsLinks = detailsModal.querySelectorAll('.detail-btn a');
     detailsLinks[0].setAttribute('href', '#');
+    body[0].style.overflowY = 'auto';
   });
 });
 
