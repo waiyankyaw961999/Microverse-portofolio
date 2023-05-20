@@ -1,98 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Microverse Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/index.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <title>Microverse Portfolio</title>
-</head>
-
-<body>
-  <header id="header" class="nav-section relative">
-    <nav class="w-full">
-      <div class="flex align-items-center h-4">
-        <div class="nav-items text-center w-full">
-          <a href="#hero-section"><span class="fw-600">Portfolio</span></a>
-          <a href="#about-section"><span class="fw-600">About</span></a>
-          <a href="#contact-section"><span class="fw-600">Contact</span></a>
+  <body>
+    <header id="header" class="nav-section relative">
+      <nav class="w-full">
+        <div class="flex align-items-center h-4">
+          <div class="nav-items text-center w-full">
+            <a href="#hero-section"><span class="fw-600">Portfolio</span></a>
+            <a href="#about-section"><span class="fw-600">About</span></a>
+            <a href="#contact-section"><span class="fw-600">Contact</span></a>
+          </div>
+          <div class="nav-container">
+            <input class="checkbox" type="checkbox" />
+            <span>
+              <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="hidden">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </div>
         </div>
-        <div class="nav-container">
-          <input class="checkbox" type="checkbox" />
-          <span>
-            <i class="fa-solid fa-bars"></i>
-          </span>
-          <span class="hidden">
-            <i class="fa-solid fa-xmark"></i>
-          </span>
-        </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <section id="hero-section" class="hero-section relative flex flex-col align-items-center">
-    <div class="hero-bg absolute"></div>
-    <div class="hero-container">
-      <div class="hero-content fw-700 leading-4 w-full text-center">
-        <h1 class="text-dark hero-title">
-          Hey there. I'm Alex. <br />
-          <span class="text-primary">I'm a software developer</span>
-        </h1>
+    <section
+      id="hero-section"
+      class="hero-section relative flex flex-col align-items-center"
+    >
+      <div class="hero-bg absolute"></div>
+      <div class="hero-container">
+        <div class="hero-content fw-700 leading-4 w-full text-center">
+          <h1 class="text-dark hero-title">
+            Hey there. I'm Alex. <br />
+            <span class="text-primary">I'm a software developer</span>
+          </h1>
+        </div>
+        <p class="hero-desc mt-0 mb-2">
+          I can help you build a I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don't hesitate to contact
+          me.
+        </p>
       </div>
-      <p class="hero-desc mt-0 mb-2">
-        I can help you build a I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don't hesitate to contact
-        me.
-      </p>
-    </div>
-    <ul class="social-link flex justify-center">
-      <li>
-        <a href="#twitter" target="_blank" rel="noopener noreferrer"><span>
-            <img src="./assets/icons/twitter.svg" alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#linkedin" target="_blank" rel="noopener noreferrer"><span>
-            <img src="./assets/icons/linkedin.svg" alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#medium" target="_blank" rel="noopener noreferrer"><span> <img src="./assets/icons/medium.svg"
-              alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#github" target="_blank" rel="noopener noreferrer"><span> <img src="./assets/icons/github.svg"
-              alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#angellist" target="_blank" rel="noopener noreferrer">
-          <span></span>
-          <img src="./assets/icons/angellist.svg" alt="angelist" />
+      <ul class="social-link flex justify-center">
+        <li>
+          <a href="#twitter" target="_blank" rel="noopener noreferrer"
+            ><span>
+              <img src="./assets/icons/twitter.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#linkedin" target="_blank" rel="noopener noreferrer"
+            ><span>
+              <img src="./assets/icons/linkedin.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#medium" target="_blank" rel="noopener noreferrer"
+            ><span> <img src="./assets/icons/medium.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#github" target="_blank" rel="noopener noreferrer"
+            ><span> <img src="./assets/icons/github.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#angellist" target="_blank" rel="noopener noreferrer">
+            <span></span>
+            <img src="./assets/icons/angellist.svg" alt="angelist" />
+          </a>
+        </li>
+      </ul>
+      <div class="scroll-down">
+        <a href="#work-section">
+          <button type="button" class="scroll-down btn cursor-pointer">
+            <span>
+              <img src="./assets/icons/chevron-down.svg" alt="chevron-down" />
+            </span>
+          </button>
         </a>
-      </li>
-    </ul>
-    <div class="scroll-down">
-      <a href="#work-section">
-        <button type="button" class="scroll-down btn cursor-pointer">
-          <span>
-            <img src="./assets/icons/chevron-down.svg" alt="chevron-down" />
-          </span>
-        </button>
-      </a>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="work-section" class="work-section" id="work-section">
-    <div class="title">
-      <h2 class="section-header text-center">My Recent Works</h2>
-      <span class="underline"></span>
-    </div>
-
-    <div class="work-lists">
-      <div class="box flex flex-col">
-        <div class="box-img">
-          <img class="w-full h-full" src="./assets/images/img-placeholder.png" alt="imgPlaceholder" />
+    <section id="work-section" class="work-section bg-white" id="work-section">
+      <div class="title">
+        <h2 class="section-header text-center">My Recent Works</h2>
+        <span class="underline"></span>
+      </div>
+      <div class="work-lists">
+        <div class="box flex flex-col">
+          <div class="box-img">
+            <img
+              class="w-full h-full"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+          </div>
+          <div class="box-content fw-600">
+            <h2 class="">Multi-Post Stories Gain + Glory</h2>
+            <div class="tags">
+              <ul class="flex w-full justify-between">
+                <li>Ruby on Rails</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <button class="text-center btn text-white btn-view" type="button">
+                See Project
+              </button>
+            </div>
+          </div>
         </div>
         <div class="box-content fw-600">
           <h2 class="">Multi-Post Stories Gain + Glory</h2>
@@ -104,242 +135,331 @@
               <li>HTML</li>
             </ul>
           </div>
-          <div class="flex justify-center">
-            <button class="text-center btn text-white" type="button">
-              See Project
-            </button>
+          <div class="box-content fw-600">
+            <h2 class="">Multi-Post Stories Gain + Glory</h2>
+            <div class="tags">
+              <ul class="flex w-full justify-between">
+                <li>Ruby on Rails</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <button class="text-center btn text-white btn-view" type="button">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box flex flex-col">
+          <div class="box-img">
+            <img
+              class="w-full h-full"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+          </div>
+          <div class="box-content fw-600">
+            <h2 class="">Multi-Post Stories Gain + Glory</h2>
+            <div class="tags">
+              <ul class="flex w-full justify-between">
+                <li>Ruby on Rails</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <button class="text-center btn text-white btn-view" type="button">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box flex flex-col">
+          <div class="box-img">
+            <img
+              class="w-full h-full"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+          </div>
+          <div class="box-content fw-600">
+            <h2 class="">Multi-Post Stories Gain + Glory</h2>
+            <div class="tags flex w-full justify-between">
+              <ul class="flex w-full justify-between">
+                <li>Ruby on Rails</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <button class="text-center btn text-white btn-view" type="button">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box flex flex-col">
+          <div class="box-img">
+            <img
+              class="w-full h-full"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+          </div>
+          <div class="box-content fw-600">
+            <h2 class="">Multi-Post Stories Gain + Glory</h2>
+            <div class="tags">
+              <ul class="flex w-full justify-between">
+                <li>Ruby on Rails</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <button class="text-center btn text-white btn-view" type="button">
+                See Project
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="box flex flex-col">
+          <div class="box-img">
+            <img
+              class="w-full h-full"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+          </div>
+          <div class="box-content fw-600">
+            <h2 class="">Multi-Post Stories Gain + Glory</h2>
+            <div class="tags">
+              <ul class="flex w-full justify-between">
+                <li>Ruby on Rails</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+            </div>
+            <div class="flex justify-center">
+              <button class="text-center btn text-white btn-view" type="button">
+                See Project
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box flex flex-col">
-        <div class="box-img">
-          <img class="w-full h-full" src="./assets/images/img-placeholder.png" alt="imgPlaceholder" />
+      <div class="details-modal-overlay"></div>
+      <div class="details-modal">
+        <div class="flex flex-col relative">
+          <div>
+            <img
+              class="detail-img"
+              src="./assets/images/img-placeholder.png"
+              alt="imgPlaceholder"
+            />
+            <svg
+              class="absolute btn-close"
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+          <h3 class="project-title"></h3>
+          <div class="details-tags">
+            <ul class="flex"></ul>
+          </div>
+          <div class="details-body"></div>
         </div>
-        <div class="box-content fw-600">
-          <h2 class="">Multi-Post Stories Gain + Glory</h2>
-          <div class="tags">
-            <ul class="flex w-full justify-between">
-              <li>Ruby on Rails</li>
-              <li>Css</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-          </div>
-          <div class="flex justify-center">
-            <button class="text-center btn text-white" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="box flex flex-col">
-        <div class="box-img">
-          <img class="w-full h-full" src="./assets/images/img-placeholder.png" alt="imgPlaceholder" />
-        </div>
-        <div class="box-content fw-600">
-          <h2 class="">Multi-Post Stories Gain + Glory</h2>
-          <div class="tags">
-            <ul class="flex w-full justify-between">
-              <li>Ruby on Rails</li>
-              <li>Css</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-          </div>
-          <div class="flex justify-center">
-            <button class="text-center btn text-white" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="box flex flex-col">
-        <div class="box-img">
-          <img class="w-full h-full" src="./assets/images/img-placeholder.png" alt="imgPlaceholder" />
-        </div>
-        <div class="box-content fw-600">
-          <h2 class="">Multi-Post Stories Gain + Glory</h2>
-          <div class="tags flex w-full justify-between">
-            <ul class="flex w-full justify-between">
-              <li>Ruby on Rails</li>
-              <li>Css</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-          </div>
-          <div class="flex justify-center">
-            <button class="text-center btn text-white" type="button">
-              See Project
-            </button>
-          </div>
+        <div class="flex justify-between">
+          <button class="detail-btn">
+            <a href="#liveurl" class="flex align-items-center justify-between">
+              <span class="text-white tag-name">See live</span>
+              <img src="./assets/icons/icon-live.svg" alt="live-icon" />
+            </a>
+          </button>
+          <button class="detail-btn">
+            <a href="#github" class="flex align-items-center justify-between">
+              <span class="text-white tag-name">See Source</span>
+              <img src="./assets/icons/icon-github.svg" alt="live-icon" />
+            </a>
+          </button>
         </div>
       </div>
-      <div class="box flex flex-col">
-        <div class="box-img">
-          <img class="w-full h-full" src="./assets/images/img-placeholder.png" alt="imgPlaceholder" />
+    </section>
+
+    <section
+      id="about-section"
+      class="about-section relative flex flex-col align-items-center bg-white"
+    >
+      <div class="about-bg"></div>
+      <div class="about-container">
+        <div class="about-content fw-700 leading-4 w-full text-center mb-2">
+          <h2 class="text-dark about-title">About Me</h2>
         </div>
-        <div class="box-content fw-600">
-          <h2 class="">Multi-Post Stories Gain + Glory</h2>
-          <div class="tags">
-            <ul class="flex w-full justify-between">
-              <li>Ruby on Rails</li>
-              <li>Css</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-          </div>
-          <div class="flex justify-center">
-            <button class="text-center btn text-white" type="button">
-              See Project
-            </button>
-          </div>
-        </div>
+        <p class="about-desc mt-0 mb-2 text-center">
+          I can help you build a I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don't hesitate to contact
+          me.
+        </p>
       </div>
-      <div class="box flex flex-col">
-        <div class="box-img">
-          <img class="w-full h-full" src="./assets/images/img-placeholder.png" alt="imgPlaceholder" />
-        </div>
-        <div class="box-content fw-600">
-          <h2 class="">Multi-Post Stories Gain + Glory</h2>
-          <div class="tags">
-            <ul class="flex w-full justify-between">
-              <li>Ruby on Rails</li>
-              <li>Css</li>
-              <li>JavaScript</li>
-              <li>HTML</li>
-            </ul>
-          </div>
-          <div class="flex justify-center">
-            <button class="text-center btn text-white" type="button">
-              See Project
-            </button>
-          </div>
+      <div class="resume">
+        <button class="btn text-white" type="button">Get My Resume</button>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="info-box language">
+        <div class="language-content info-content text-dark">
+          <h2 class="text-center">Languages</h2>
+          <ul class="language-list w-full">
+            <li>Ruby</li>
+            <li>Css</li>
+            <li>Javascript</li>
+            <li>Html</li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="about-section" class="about-section relative flex flex-col align-items-center">
-    <div class="about-bg"></div>
-    <div class="about-container">
-      <div class="about-content fw-700 leading-4 w-full text-center mb-2">
-        <h2 class="text-dark about-title">About Me</h2>
+      <div class="info-box framework">
+        <div class="info-content text-dark">
+          <h2 class="text-center">Frameworks</h2>
+          <ul class="framework-list framework-list-1 w-full">
+            <li>React.js</li>
+            <li>Ruby</li>
+            <li>RSpec</li>
+          </ul>
+          <ul class="framework-list framework-list-2 w-full">
+            <li>Capybara</li>
+            <li>Selenium</li>
+          </ul>
+        </div>
       </div>
-      <p class="about-desc mt-0 mb-2 text-center">
-        I can help you build a I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don't hesitate to contact
-        me.
-      </p>
-    </div>
-    <div class="resume">
-      <button class="btn text-white" type="button">Get My Resume</button>
-    </div>
-  </section>
 
-  <section id="info-section" class="info-section">
-    <div class="info-box language">
-      <div class="language-content info-content text-dark">
-        <h2 class="text-center">Languages</h2>
-        <ul class="language-list w-full">
-          <li>Ruby</li>
-          <li>Css</li>
-          <li>Javascript</li>
-          <li>Html</li>
-        </ul>
+      <div class="info-box skill">
+        <div class="info-content text-dark">
+          <h2 class="text-center">Skills</h2>
+          <ul class="skill-list skill-list-1 w-full">
+            <li>Database Management</li>
+            <li>Version Control</li>
+          </ul>
+          <ul class="skill-list skill-list-2 w-full">
+            <li>CLI</li>
+            <li>Web Development</li>
+            <li>API Design</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="info-box framework">
-      <div class="info-content text-dark">
-        <h2 class="text-center">Frameworks</h2>
-        <ul class="framework-list framework-list-1 w-full">
-          <li>React.js</li>
-          <li>Ruby</li>
-          <li>RSpec</li>
-        </ul>
-        <ul class="framework-list framework-list-2 w-full">
-          <li>Capybara</li>
-          <li>Selenium</li>
-        </ul>
+    <section class="contact-section relative" id="contact-section">
+      <div class="contact-container">
+        <div class="contact-header">
+          <h2 class="">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </div>
+        <div class="contact-form">
+          <form
+           novalidate
+            id="form"
+            action="https://formspree.io/f/xgebdabq"
+            method="POST"
+            class="flex flex-col"
+          >
+            <input
+              id="name"
+              maxlength="30"
+              class="contact-input text-dark"
+              name="name"
+              type="text"
+              placeholder="Full name"
+              required
+            />
+
+            <input
+              id="email"
+              class="contact-input text-dark"
+              name="email"
+              type="email"
+              placeholder="Email address"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+
+            <textarea
+              id="message"
+              maxlength="500"
+              type="text-area"
+              class="contact-input message-box"
+              name="message"
+              placeholder="Hey I'd like to connect to..."
+              required
+            ></textarea>
+            <span class="form-error" aria-live="polite"></span>
+
+            <div class="btn-wrapper">
+              <button type="submit" class="bg-primary text-center">
+                <span class="text-white">Get in touch</span>
+              </button>
+            </div>
+          </form>
+
+          <h4 class="text-center text-dark">wykdev@gmail.com</h4>
+        </div>
       </div>
-    </div>
+      <div class="bg-frames absolute"></div>
+    </section>
+    <footer id="footer" class="bg-white">
+      <ul class="social-link flex justify-center">
+        <li>
+          <a href="#twitter" target="_blank" rel="noopener noreferrer"
+            ><span>
+              <img src="./assets/icons/twitter.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#linkedin" target="_blank" rel="noopener noreferrer"
+            ><span>
+              <img src="./assets/icons/linkedin.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#medium" target="_blank" rel="noopener noreferrer"
+            ><span> <img src="./assets/icons/medium.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#github" target="_blank" rel="noopener noreferrer"
+            ><span> <img src="./assets/icons/github.svg" alt="twitter" /> </span
+          ></a>
+        </li>
+        <li>
+          <a href="#angellist" target="_blank" rel="noopener noreferrer">
+            <span></span>
+            <img src="./assets/icons/angellist.svg" alt="angelist" />
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-    <div class="info-box skill">
-      <div class="info-content text-dark">
-        <h2 class="text-center">Skills</h2>
-        <ul class="skill-list skill-list-1 w-full">
-          <li>Database Management</li>
-          <li>Version Control</li>
-        </ul>
-        <ul class="skill-list skill-list-2 w-full">
-          <li>CLI</li>
-          <li>Web Development</li>
-          <li>API Design</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <script type="module" src="/js/index.js"></script>
+    <script src="/js/formValidator.js"></script>
 
-  <section id="contact-section" class="contact-section relative">
-    <div class="contact-container">
-      <div class="contact-header">
-        <h2 class="">
-          I'm always interested in hearing about new projects, so if you'd
-          like to chat please get in touch.
-        </h2>
-      </div>
-      <div class="contact-form">
-        <form action="https://formspree.io/f/xgebdabq" method="POST" class="flex flex-col">
-          <input maxlength="30" class="contact-input text-dark" name="name" type="text" placeholder="Full name"
-            required />
-
-          <input class="contact-input text-dark" name="email" type="email" placeholder="Email address" required />
-
-          <textarea maxlength="500" type="text-area" class="contact-input message-box" required name="message"
-            placeholder="Hey I'd like to connect to..."></textarea>
-
-          <div class="btn-wrapper">
-            <button type="submit" class="bg-primary text-center">
-              <span class="text-white">Get in touch</span>
-            </button>
-          </div>
-        </form>
-
-        <h4 class="text-center text-dark">wykdev@gmail.com</h4>
-      </div>
-    </div>
-    <div class="bg-frames absolute"></div>
-
-  </section>
-  <footer id="footer" class="">
-    <ul class="social-link flex justify-center">
-      <li>
-        <a href="#twitter" target="_blank" rel="noopener noreferrer"><span>
-            <img src="./assets/icons/twitter.svg" alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#linkedin" target="_blank" rel="noopener noreferrer"><span>
-            <img src="./assets/icons/linkedin.svg" alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#medium" target="_blank" rel="noopener noreferrer"><span> <img src="./assets/icons/medium.svg"
-              alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#github" target="_blank" rel="noopener noreferrer"><span> <img src="./assets/icons/github.svg"
-              alt="twitter" /> </span></a>
-      </li>
-      <li>
-        <a href="#angellist" target="_blank" rel="noopener noreferrer">
-          <span></span>
-          <img src="./assets/icons/angellist.svg" alt="angelist" />
-        </a>
-      </li>
-    </ul>
-  </footer>
-
-  <script src="/index.js"> </script>
-</body>
-
+  </body>
 </html>
