@@ -1,5 +1,12 @@
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -7,6 +14,9 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -145,4 +155,12 @@ ul {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+.bg-white {
+  background-color: var(--bg-white);
 }
