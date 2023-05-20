@@ -1,3 +1,8 @@
+.work-section {
+  position: relative;
+  padding: 1.875rem 0;
+}
+
 .work-section .title {
   display: flex;
   align-items: center;
@@ -24,9 +29,9 @@
   transition: ease 1s;
 }
 
-.box:hover {
+/* .box:hover {
   scale: 1.1;
-}
+} */
 
 .box-img {
   height: 340px;
@@ -47,6 +52,62 @@
   justify-content: center;
 }
 
+.details-modal-overlay {
+  transition: opacity 0.15s ease-out;
+  pointer-events: none;
+  background-color: darkgrey;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 100;
+}
+
+.details-modal {
+  border-radius: 0.5em;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  width: 98%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  padding: 1rem 1rem;
+  visibility: hidden;
+  max-width: 820px;
+}
+
+.project-title {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.details-tags > ul li {
+  background: #ebf0ee;
+  padding: 8px 12px;
+  margin-left: 0.34rem;
+  color: #3a4a42;
+}
+
+.details-modal p {
+  color: #344563;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.detail-img {
+  width: 100%;
+  border-radius: 18px;
+  max-height: 420px;
+}
+
 .box-content {
   color: var(--text-dark);
   background-color: var(--bg-white);
@@ -65,6 +126,10 @@
   line-height: 32px;
 }
 
+.tags {
+  margin-top: 2rem;
+}
+
 .box-content .tags li {
   padding: 8px 12px;
   border-radius: 4px;
@@ -81,11 +146,57 @@
   border: 0;
 }
 
+.detail-btn {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 0;
+  background-color: var(--bg-primary);
+  max-width: 156px;
+  max-height: 48px;
+  cursor: pointer;
+}
+
+.detail-btn:hover {
+  background-color: var(--btn-hover);
+  color: var(--text-white);
+  font-size: 1.7em;
+}
+
+.detail-btn:active {
+  background-color: var(--bg-primary-dark);
+}
+
+.detail-btn span {
+  line-height: 24px;
+  font-size: 17px;
+}
+
+.detail-btn .tag-name {
+  margin-right: 16px;
+}
+
+.btn-close {
+  right: 22px;
+  top: 22px;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1090px) {
   .work-lists {
     grid-template-columns: repeat(3, 0fr);
     margin: 0 8.9735rem;
     row-gap: 32px;
+  }
+
+  .btn-close {
+    right: 22px;
+    top: -40px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  .details-modal {
+    padding: 5rem 1rem;
   }
 }
 

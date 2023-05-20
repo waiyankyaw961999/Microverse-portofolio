@@ -119,7 +119,6 @@ textarea[type=text-area]:focus {
 
   .contact-section {
     display: flex;
-    margin-top: 6.062rem;
     justify-content: center;
   }
 
