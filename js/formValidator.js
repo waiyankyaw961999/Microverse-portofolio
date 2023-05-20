@@ -1,11 +1,8 @@
-/* eslint-disable no-useless-escape */
-/* eslint-disable linebreak-style */
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const name = document.getElementById('name');
 const message = document.getElementById('message');
 const formError = document.querySelector('.form-error');
-
 
 function showError() {
   if (email.validity.valueMissing) {
