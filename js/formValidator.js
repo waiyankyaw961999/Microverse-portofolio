@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
-const name = document.getElementById('name');
+const nameInput = document.getElementById('name');
 const message = document.getElementById('message');
 const formError = document.querySelector('.form-error');
 
@@ -25,7 +25,8 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-  if (name.validity.valueMissing || message.validity.valueMissing || email.validity.valueMissing) {
+  if (nameInput.validity.valueMissing || message.validity.valueMissing
+     || email.validity.valueMissing) {
     formError.innerHTML = 'You need to fill all the fields.';
     formError.className = 'form-error';
     event.preventDefault();
