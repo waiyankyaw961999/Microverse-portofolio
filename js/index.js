@@ -1,8 +1,5 @@
-/* eslint-disable linebreak-style */
-
 import { navItemsToggle, humburgerToggle } from './navbarToggler.js';
 import data from '../data/projects.js';
-
 // Navbar Toggler
 document
   .querySelector('.nav-container .checkbox')
@@ -16,6 +13,7 @@ const closeButton = document.querySelectorAll('.btn-close');
 const overlayModal = document.querySelector('.details-modal-overlay');
 const detailsModal = document.querySelector('.details-modal');
 const workLists = document.querySelector('.work-lists');
+const body = document.getElementsByTagName('body');
 
 closeButton.forEach((button) => {
   button.addEventListener('click', () => {
@@ -77,6 +75,9 @@ viewDetailButton.forEach((button, index) => {
     });
     const desc = detailsModal.querySelector('.details-body');
 
+    const detailImg = detailsModal.querySelector('.detail-img');
+    detailImg.setAttribute('src', projectData.thumbnail);
+
     projectData.desc.forEach((item) => {
       desc.appendChild(document.createElement('p')).innerHTML = item;
     });
@@ -86,5 +87,6 @@ viewDetailButton.forEach((button, index) => {
 
     overlayModal.style.opacity = '1';
     detailsModal.style.visibility = 'visible';
+    body[0].style.overflowY = 'hidden';
   });
 });

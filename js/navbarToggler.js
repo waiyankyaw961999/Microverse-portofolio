@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 export function navItemsToggle() {
   const humBurger = document.getElementsByClassName('nav-container');
   const navItems = document.getElementsByClassName('nav-items');

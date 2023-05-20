@@ -100,8 +100,9 @@
         <span class="underline"></span>
       </div>
       <div class="work-lists">
-          <!-- Lists of works will be rendered here -->
+        <!-- Lists of works will be rendered here -->
       </div>
+
       <div class="details-modal-overlay"></div>
       <div class="details-modal">
         <div class="flex flex-col relative">
@@ -109,6 +110,7 @@
             <img
               class="detail-img"
               src="./assets/images/img-placeholder.png"
+              height="500px"
               alt="imgPlaceholder"
             />
             <svg
@@ -127,13 +129,29 @@
               />
             </svg>
           </div>
-          <h3 class="project-title"></h3>
+          <div class="project-title-wrapper flex justify-between">
+            <h3 class="project-title"></h3>
+            <div class="flex justify-between btn-wrapper-desktop">
+              <button class="detail-btn">
+                <a href="#liveurl" class="flex align-items-center justify-between">
+                  <span class="text-white tag-name">See live</span>
+                  <img src="./assets/icons/icon-live.svg" alt="live-icon" />
+                </a>
+              </button>
+              <button class="detail-btn">
+                <a href="#github" class="flex align-items-center justify-between">
+                  <span class="text-white tag-name">See Source</span>
+                  <img src="./assets/icons/icon-github.svg" alt="live-icon" />
+                </a>
+              </button>
+            </div>
+          </div>
           <div class="details-tags">
             <ul class="flex"></ul>
           </div>
           <div class="details-body"></div>
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between btn-wrapper-mobile">
           <button class="detail-btn">
             <a href="#liveurl" class="flex align-items-center justify-between">
               <span class="text-white tag-name">See live</span>
@@ -171,7 +189,7 @@
       </div>
     </section>
 
-    <section class="info-section">
+    <section id="info-section" class="info-section">
       <div class="info-box language">
         <div class="language-content info-content text-dark">
           <h2 class="text-center">Languages</h2>
@@ -215,7 +233,7 @@
       </div>
     </section>
 
-    <section class="contact-section relative" id="contact-section">
+    <section id="contact-section" class="contact-section relative">
       <div class="contact-container">
         <div class="contact-header">
           <h2 class="">

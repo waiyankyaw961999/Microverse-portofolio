@@ -164,3 +164,7 @@ ul {
 .bg-white {
   background-color: var(--bg-white);
 }
+
+.gap {
+  gap: 0.5rem;
+}
