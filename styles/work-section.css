@@ -84,7 +84,7 @@
 }
 
 .project-title {
-  color:#172B4D;
+  color: #172b4d;
   font-size: 32px;
   line-height: 44px;
   font-weight: 600;
@@ -227,7 +227,7 @@
 
   .project-title-wrapper {
     margin-top: 24px;
-    width:867px; 
+    width: 867px;
   }
 
   .project-title-wrapper > div {
