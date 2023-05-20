@@ -4,14 +4,18 @@ import { navItemsToggle, humburgerToggle } from './navbarToggler.js';
 import data from '../data/projects.js';
 
 // Navbar Toggler
-document.querySelector('.nav-container .checkbox').addEventListener('click', navItemsToggle);
-document.querySelector('.nav-container .checkbox').addEventListener('click', humburgerToggle);
+document
+  .querySelector('.nav-container .checkbox')
+  .addEventListener('click', navItemsToggle);
+document
+  .querySelector('.nav-container .checkbox')
+  .addEventListener('click', humburgerToggle);
 
 // Modal
-const viewDetailButton = document.querySelectorAll('.btn-view');
 const closeButton = document.querySelectorAll('.btn-close');
 const overlayModal = document.querySelector('.details-modal-overlay');
 const detailsModal = document.querySelector('.details-modal');
+const workLists = document.querySelector('.work-lists');
 
 closeButton.forEach((button) => {
   button.addEventListener('click', () => {
@@ -32,6 +36,36 @@ closeButton.forEach((button) => {
   });
 });
 
+data.forEach((item) => {
+  const project = document.createElement('div');
+  project.innerHTML = `
+  <div class="box flex flex-col">
+  <div class="box-img">
+    <img
+      class="w-full h-full"
+      src="${item.thumbnail}"
+      alt="imgPlaceholder"
+    />
+  </div>
+  <div class="box-content fw-600">
+    <h2 class="">Multi-Post Stories Gain + Glory</h2>
+    <div class="tags">
+      <ul class="flex w-full justify-between">
+        ${item.tags.map((tag) => `<li>${tag}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="flex justify-center">
+      <button class="text-center btn text-white btn-view" type="button">
+        See Project
+      </button>
+    </div>
+  </div>
+</div>
+  `;
+  workLists.appendChild(project);
+});
+
+const viewDetailButton = document.querySelectorAll('.btn-view');
 viewDetailButton.forEach((button, index) => {
   button.addEventListener('click', () => {
     // Loading the data from the json file
