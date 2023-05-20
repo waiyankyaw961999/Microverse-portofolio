@@ -160,10 +160,10 @@ Example command:
 
 👤 **Authors**
 
-- GitHub: [@WaiYanKyaw](https://github.com/Arsenethierry)
+- GitHub: [@WaiYanKyaw](https://github.com/waiyankyaw961999)
 - LinkedIn: [WaiYanKyaw](https://www.linkedin.com/in/wai-yan-k-152b22106/)
 
-- GitHub: [@Arsene](https://github.com/waiyankyaw961999)
+- GitHub: [@Arsene](https://github.com/Arsenethierry)
 - LinkedIn: [Arsene](https://www.linkedin.com/in/arsenethierry/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
