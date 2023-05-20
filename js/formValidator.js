@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable no-useless-escape */
 const form = document.getElementById('form');
 const email = document.getElementById('email');
 const name = document.getElementById('name');
